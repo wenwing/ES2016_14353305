@@ -32,12 +32,14 @@ three parts:
     $  cdobjdir				       //进入该文件夹objdir
     $  ../configure CXX=g++--disable-async-updates	//运行configure
 运行后得到以下结果
+
 ![](http://upload-images.jianshu.io/upload_images/3176291-93eef87738aa9f1b.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
     $  sudo make install			//编译
     $  pwd					      //输出当前所在路径，需记录当前的工作路径
 路径如下
+
 ![](http://upload-images.jianshu.io/upload_images/3176291-27507c299ebf0694.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ####5.编译dol
@@ -50,12 +52,14 @@ three parts:
     
     $  ant -f build_zip.xml all	//编译
 若成功会显示build successful
+
 ![](http://upload-images.jianshu.io/upload_images/3176291-6e276d4a9c85ba5a.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ####6.至此完成DOL的开发环境配置
 
     $  cd build/bin/main			  //进入build/bin/mian路径下
     $  ant -frunexample.xml -Dnumber=1	//运行第一个例子
 若成功会显示build successful
+
 ![](http://upload-images.jianshu.io/upload_images/3176291-198413c45e637492.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ###三、实验心得
 这次的配置只要跟着实验文档就能比较顺利地完成，但比较波折的是用Markdown写实验报告。坦诚地说Markdown
