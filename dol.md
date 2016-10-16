@@ -53,6 +53,7 @@ square模块是执行模块，要让执行模块数量改变，即改变系统�
 ######3. 实验结果
 
 ![result of example2](http://upload-images.jianshu.io/upload_images/3176291-1c18db9d1bb2ae7d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 如图所示，generator产生0-19的整数，square对输入进行平方操作，有两个square模块，因此consumer输出的结果是0-19这20个整数的4次方。
 
 ![frame of example2](http://upload-images.jianshu.io/upload_images/3176291-09186b8649bd69bb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -82,6 +83,7 @@ square模块是执行模块，要让执行模块数量改变，即改变系统�
 square.c的核心代码是`i=i*i;`，使生成0-19的整数经过执行模块后变为平方数，因此只需要将`i=i*i*;`改为`i=i*i*i;`即可使平方数变为3次方数。
 ######3. 实验结果
 ![result of example1](http://upload-images.jianshu.io/upload_images/3176291-d5f04d59cd2e5d6d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 如图所示，generator产生0-19的整数，square对输入进行3次方操作，只有1个square模块，因此consumer输出的结果是0-19这20个整数的3次方。
 
 ![frame of example1](http://upload-images.jianshu.io/upload_images/3176291-2134f9328934da62.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
