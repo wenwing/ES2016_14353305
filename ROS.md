@@ -69,17 +69,22 @@ Individual Package:
 
     roscore
 得到以下
+
 ![](http://upload-images.jianshu.io/upload_images/3176291-e2c80cd020010fe9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
 打开第二个终端，输入以下指令，开启小乌龟界面
 
     rosrun turtlesim turtlesim_node
 ![](http://upload-images.jianshu.io/upload_images/3176291-6b7b30ba63109935.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 打开第三个终端，输入以下指令，接受键盘输入，控制小乌龟的移动
      
     rosrun turtlesim turtle_teleop_key
 
 
 ![](http://upload-images.jianshu.io/upload_images/3176291-1177e91bdf64d48b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 打开第四个终端，输入指令，可以看到ROS nodes以及Topic等图形展示
 
     rosrun rqt_graph rqt_graph
