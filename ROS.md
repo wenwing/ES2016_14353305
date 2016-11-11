@@ -61,9 +61,28 @@ Individual Package:
 
     sudo apt-get install python-rosinstall
 ##三、实验结果
-当以上的实验步骤都没有报错，能成功到达2.7，看到以下的信息，代表ROS的安装完成，可以进行cartographer的测试
+当以上的实验步骤都没有报错，能成功到达2.7，看到以下的信息，代表ROS的安装完成，可以进行Beginner Tutorials的测试
 
 ![](http://upload-images.jianshu.io/upload_images/3176291-42cc4d2d89935f10.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+打开一个终端，输入指令
+
+    roscore
+得到以下
+![](http://upload-images.jianshu.io/upload_images/3176291-e2c80cd020010fe9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+打开第二个终端，输入以下指令，开启小乌龟界面
+
+    rosrun turtlesim turtlesim_node
+![](http://upload-images.jianshu.io/upload_images/3176291-6b7b30ba63109935.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+打开第三个终端，输入以下指令，接受键盘输入，控制小乌龟的移动
+     
+    rosrun turtlesim turtle_teleop_key
+
+
+![](http://upload-images.jianshu.io/upload_images/3176291-1177e91bdf64d48b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+打开第四个终端，输入指令，可以看到ROS nodes以及Topic等图形展示
+
+    rosrun rqt_graph rqt_graph
 ##四、实验感想
 跟往常一样，安装笔记还是能比较快完成的，基本就是命令行输入。但是比较重要的一点是要安装什么、用什么命令行安装。在原网页处已经写得比较清楚了，但因为是英文的关系，看起来不如中文方便而已。
 
